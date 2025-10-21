@@ -25,10 +25,10 @@ decodeAffine msg (a, b) = sub msg f
 sub :: String -> (Char -> Char) -> String
 sub msg key = map key msg
 
--- test keys for substitution
+-- test key for substitution
 subKey :: [(Char, Char)]
 subKey = zip alphabet "mnbvcxzlkjhgfdsapoiuytrewq"
-
+-- inverse key
 inverseKey :: [(Char, Char)] -> [(Char, Char)]
 inverseKey = map (\(a, b) -> (b, a))
 
