@@ -24,9 +24,9 @@ main = do
 
     -- ukol 6 - 7
 
-    print $ coincidenceIndex "thisisanexampleofenglishtextwithnormalfrequencies"
+    print $ coincidenceIndex "When he had to picnic on the beach, he purposely put sand in other people’s food."
 
-    print $ coincidenceIndex "thequickbrownfoxjumpsoverthelazydogandthisisarepeatedenglishtextexample"
+    print $ coincidenceIndex "The white water rafting trip was suddenly halted by the unexpected brick wall."
 
     print $ coincidenceIndex "qwertyuiopasdfghjklzxcvbnm"
 
