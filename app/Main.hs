@@ -5,6 +5,7 @@ import Eukleid
 
 import CryptoAnalysis
 import ModularAlgebra
+import Polynom
 
 main :: IO ()
 main = do
@@ -33,3 +34,23 @@ main = do
     print $ kasiski "abababababab" 3
 
     print $ kasiski "abdfrabdghcdabdhjkabd" 3
+
+    print $ plusMod2 3 4 
+
+    -- ukol 8 
+
+    let a = P [1,0,1,0,0,0,1,1,0]
+    let b = P [0,1,0,1,1,0,0,1,1]
+
+    print $ a + b
+
+    let a1 = P [0,0,0,0,0,0,0,0,1]
+    let b1 = P [0,0,1,0,0,1,0,1,1]
+
+    print $ a1 * b1
+
+    let a2 = P [0,0,0,0,0,0,0,1,0]
+    let b2 = P [0,0,0,0,0,0,1,0,1]
+    
+    print $ a2 * b2
+    print $ b2 * a2
